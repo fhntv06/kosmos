@@ -11,8 +11,10 @@
 
         require_once "./block/footer.php";
 
-        require_once "scripts.php"; 
-    
+        if( $url != "http://kosmos/404.php" ){
+            require_once "scripts.php"; 
+        }
+
     ?> 
     
 </body>
