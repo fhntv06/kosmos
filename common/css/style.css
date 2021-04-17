@@ -608,5 +608,6 @@ body{
     .card_text {
         width: 100%;
         left: 0;
+        padding: 0;
     }
 }
