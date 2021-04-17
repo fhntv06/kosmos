@@ -97,6 +97,7 @@ function moveFacts(){
 arrowUpOne.addEventListener("click", moveFacts);
 arrowDownOne.addEventListener("click", moveFacts);
 
+overflowNav[0].classList.add("active"); // изначально активна первая
 for(let i = 0; i < overflowNav.length; i++){
 
     overflowNav[i].addEventListener("click", function(){
