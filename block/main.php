@@ -2,7 +2,7 @@
 
 <main class="main">
     <?php
-        if( $url == "http://kosmos/" ){ 
+        if( $url == $protocol."kosmos/" ){ 
 
             require_once "main/sidebar.php"; 
 
@@ -12,13 +12,13 @@
     <div id="container">
         <?php 
         
-            if( $url == "http://kosmos/404.php" ){ 
+            if( $url == $protocol."kosmos/404.php" ){ 
 
                 require_once "error.php";
 
             }
 
-            if( $url == "http://kosmos/" ){ 
+            if( $url == $protocol."kosmos/" ){ 
 
                 require_once "main/news.php";
                 require_once "main/spaceships.php";

@@ -1,19 +1,6 @@
 <?php 
-
 $title = "О компании";
 
-?>
+require_once "../default.php";
+require_once "../index.php";
 
-<!DOCTYPE html>
-<html lang="ru">
-
-<?php 
-
-    require_once "../common/head.php";
-
-?>
-
-<body>
-    
-</body>
-</html>

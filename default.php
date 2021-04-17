@@ -1,4 +1,6 @@
 <?php 
+
+    $protocol = "http://";
     require_once "common/database/database.php"; /* подключение базы данных */
 
     // код получающий url страницы
@@ -6,13 +8,18 @@
     $url = explode('?', $url);
     $url = $url[0];
 
-    if( $url == "http://kosmos/" ){
+    if( $url == $protocol."kosmos/" ){
         $title = "SPACE TODAY";
-        require_once "index.php";
 
     }
 
-    if( $url == "http://kosmos/404.php" ){
+    if( $url == $protocol."kosmos/404.php" ){
         $title = "Страница не найдена";
     }
+
+    if( $url == $protocol."kosmos/about/index.php" ){
+        $title = "О компании";
+    }
     
+    
+    require_once "index.php";
