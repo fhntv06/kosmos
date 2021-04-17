@@ -11,7 +11,7 @@
 
         require_once "./block/footer.php";
 
-        if( $url != "http://kosmos/404.php" ){
+        if( $url == "http://kosmos/" ){
             require_once "scripts.php"; 
         }
 
