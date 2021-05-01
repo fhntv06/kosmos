@@ -1,12 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+
+<?php 
+
+$content = '
+
+<div class="section">
+    <h1>Наша команда</h1>
+    <h2>Наша команда сформирована</h2>
+</div>
+
+';
+
+require_once "../default.php";
+require_once "../index.php";
+
+?> 
+
+
