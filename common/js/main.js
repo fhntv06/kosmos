@@ -116,5 +116,11 @@ for(let i = 0; i < overflowNav.length; i++){
     });
 }
 
-
+// переход к разделам из меню
+$(".sidebar").on("click","a", function (event) {
+    event.preventDefault();
+    let attr  = $(this).attr('href'),
+        top = $(attr).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+});
 
