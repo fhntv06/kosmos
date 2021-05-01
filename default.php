@@ -17,9 +17,20 @@
         $title = "Страница не найдена";
     }
 
+    // проблема с title должна решиться, если перенести все страницы (в том числе и навигацию) в базу данных
+
+    // навигация
     if( $url == $protocol."kosmos/about/index.php" ){
         $title = "О компании";
     }
-    
+    if( $url == $protocol."kosmos/works/index.php" ){
+        $title = "Портфолио";
+    }
+    if( $url == $protocol."kosmos/technology/index.php" ){
+        $title = "Технологии";
+    }
+    if( $url == $protocol."kosmos/contact/index.php" ){
+        $title = "Контакты";
+    }
     
     require_once "index.php";
